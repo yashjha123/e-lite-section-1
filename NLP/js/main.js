@@ -10,7 +10,7 @@ window.onscroll = function(e) {
 var xhr = new XMLHttpRequest();
 
 document.getElementById("sr").addEventListener('input', function (evt) {
-    xhr.open('GET', '/search?text='+this.value);
+    xhr.open('GET', 'https://infinite-taiga-09765.herokuapp.com/search?text='+this.value);
 	
 	if(this.value==""){
 		update([0,1,2,3,4,5,6,7,8])
