@@ -26,8 +26,8 @@
 	</div>
 </div>
 <div class="base">
-	<div class="home-page">
-		<div class="home-page-flex">
+	<div class="home-page" id="home">
+		<div class="home-page-flex">	
 				<div class="text">
 
 					<div class="text-header">
@@ -35,7 +35,7 @@
 					</div>
 					<div class="text-description">
 						Find the home that you and your family deserve with properto
-					</div>
+						</div>
 					<div class="text-startToday">
 						Start Today ->
 					</div>
@@ -52,8 +52,8 @@
 </div>
 <div class="main">
 	<div class="left-bar">
-		<div class="filter-by" onclick="myScript()">
-			<div class="vertical-center">
+		<div class="filter-by">
+			<div class="vertical-center" onclick="expand(this)">
 				<div class="f">
 					Filter By
 				</div>
@@ -62,46 +62,104 @@
 			</div>
 			<!-- <br> -->
 			<div class="filter" id="#pc">
-				<div class="filter-sub" id="#fc">
-					<div class="f">Residential Apartments
+				<div class="mover">
+					<div class="filter-sub" id="#fc" onclick="sep(this)">
+
+						<div class="f" onclick="setRes('Residential Apartments')">Residential Apartments
+							 <div class="check">
+							</div> 
+						</div>
+						<!-- <div class="check">
+						</div> -->
 					</div>
-					<!-- <div class="check">
-					</div> -->
-				</div>
-				
-				<div class="filter-sub" id="#fc">
-					<div class="f">Land Plots
+					
+					<div class="filter-sub" id="#fc" onclick="sep(this);setRes('Land Plots')">
+						<div class="f">Land Plots
+							<div class="check hide">
+							</div>
+						</div>
+						<!-- <div class="check">
+						</div> -->
 					</div>
-					<!-- <div class="check">
-					</div> -->
-				</div>
-				
-				<div class="filter-sub" id="#fc">
-					<div class="f">Independent Plots
+					
+					<div class="filter-sub" id="#fc" onclick="sep(this);setRes('Independent Plots')">
+						<div class="f">Independent Plots
+							<div class="check hide">
+							</div>
+						</div>
 					</div>
-					<div class="check">
+					<div class="filter-sub" id="#fc" onclick="sep(this);setRes('Office Space')">
+						<div class="f">Office Space
+							<div class="check hide">
+							</div>
+						</div>
+						<!-- <div class="check">
+						</div> -->
 					</div>
-				</div>
-				<div class="filter-sub" id="#fc">
-					<div class="f">Office Space
-					</div>
-					<!-- <div class="check">
-					</div> -->
 				</div>
 			</div>
 		</div>
 		<!-- <br> -->
-		<div class="filter-by" onclick="myScript()">
-			<div class="vertical-center">
+
+
+
+
+		<div class="filter-by">
+			<div class="vertical-center" onclick="expand(this)">
 				<div class="f">
 					Price Range
 				</div>
-				<div class="cross r">
+				<div class="cross">
 				</div>
 			</div>
 			<!-- <br> -->
-			
+			<div class="filter" id="#pc">
+				<div class="mover">
+					<div class="filter-sub" id="#fc" onclick="sep(this)">
+
+						<div class="f" onclick="setPrice(1000)"> < $ 1000
+							 <div class="check hide">
+							</div> 
+						</div>
+						<!-- <div class="check">
+						</div> -->
+					</div>
+					
+					<div class="filter-sub" id="#fc" onclick="sep(this);setPrice(2000)">
+						<div class="f"> < $ 2000
+							<div class="check hide">
+							</div>
+						</div>
+						<!-- <div class="check">
+						</div> -->
+					</div>
+					
+					<div class="filter-sub" id="#fc" onclick="sep(this);setPrice(3000)">
+						<div class="f"> <$ 3000
+							<div class="check hide">
+							</div>
+						</div>
+					</div>
+					<div class="filter-sub" id="#fc" onclick="sep(this);setPrice(4000)">
+						<div class="f"> < $ 4000
+							<div class="check hide">
+							</div>
+						</div>
+						<!-- <div class="check">
+						</div> -->
+					</div>
+				</div>
+			</div>
 		</div>
+
+
+
+
+
+
+
+
+
 
 		<div class="filter-by" onclick="myScript()">
 			<div class="vertical-center">
@@ -141,12 +199,13 @@
 		<div class="search-top vertical-center">
 			<!-- <div class="tp"> -->
 				<div class="search vertical-center">
-					<div class="search-text">
-						SEARCH HERE
-					</div>
+					<!-- <div class="search-text"> -->
+						<input type="text" id="sr" placeholder="SEARCH HERE" />
+					<!-- </div> -->
+
 				</div>
 				<div class="button sort vertical-center">
-					<div style="text-align: center;">
+					<div style="text-align: center;" onclick="change(this)">
 						Sort By:<b> Newest </b>
 					</div>
 				</div>

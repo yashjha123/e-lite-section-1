@@ -2,3 +2,13 @@
 
 	padding: 20px 100px;
 }
+.mover{
+	position: relative;
+	
+	transition:all 1s ease;
+	/*transition:opacity 2s ease;*/
+}
+.mover.hide{
+	opacity: 0;
+	margin-top: -230px;
+}
