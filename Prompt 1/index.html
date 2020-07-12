@@ -1,0 +1,294 @@
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/master.css">
+	<link rel="stylesheet" type="text/css" href="css/properto.css">
+	
+	<title>Properto</title>
+</head>
+<body>
+<div class="navbar">
+	<div class="details left">
+		Properto
+	</div>
+	<div class="details right">
+		<div class="not">
+			1
+		</div>
+		<div class="signUp">
+			Sign Up
+		</div>
+		<div class="button login">
+			Log In
+		</div>
+
+	</div>
+</div>
+<div class="base">
+	<div class="home-page" id="home">
+		<div class="home-page-flex">	
+				<div class="text">
+
+					<div class="text-header">
+						The best property, for best prices
+					</div>
+					<div class="text-description">
+						Find the home that you and your family deserve with properto
+						</div>
+					<div class="text-startToday">
+						Start Today ->
+					</div>
+				</div>
+				<img src="images/cityscape.png" class="vector" height="80%">
+		<!-- <div lass="image-parent">
+			<div class="image">
+
+			</div>
+			 <img src="" 
+		</div> -->
+		</div>
+	</div>
+</div>
+<div class="main">
+	<div class="left-bar">
+		<div class="filter-by">
+			<div class="vertical-center" onclick="expand(this)">
+				<div class="f">
+					Filter By
+				</div>
+				<div class="cross">
+				</div>
+			</div>
+			<!-- <br> -->
+			<div class="filter" id="#pc">
+				<div class="mover">
+					<div class="filter-sub" id="#fc" onclick="sep(this)">
+
+						<div class="f" onclick="setRes('Residential Apartments')">Residential Apartments
+							 <div class="check">
+							</div> 
+						</div>
+						<!-- <div class="check">
+						</div> -->
+					</div>
+					
+					<div class="filter-sub" id="#fc" onclick="sep(this);setRes('Land Plots')">
+						<div class="f">Land Plots
+							<div class="check hide">
+							</div>
+						</div>
+						<!-- <div class="check">
+						</div> -->
+					</div>
+					
+					<div class="filter-sub" id="#fc" onclick="sep(this);setRes('Independent Plots')">
+						<div class="f">Independent Plots
+							<div class="check hide">
+							</div>
+						</div>
+					</div>
+					<div class="filter-sub" id="#fc" onclick="sep(this);setRes('Office Space')">
+						<div class="f">Office Space
+							<div class="check hide">
+							</div>
+						</div>
+						<!-- <div class="check">
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <br> -->
+
+
+
+
+		<div class="filter-by">
+			<div class="vertical-center" onclick="expand(this)">
+				<div class="f">
+					Price Range
+				</div>
+				<div class="cross">
+				</div>
+			</div>
+			<!-- <br> -->
+			<div class="filter" id="#pc">
+				<div class="mover">
+					<div class="filter-sub" id="#fc" onclick="sep(this)">
+
+						<div class="f" onclick="setPrice(1000)"> < $ 1000
+							 <div class="check hide">
+							</div> 
+						</div>
+						<!-- <div class="check">
+						</div> -->
+					</div>
+					
+					<div class="filter-sub" id="#fc" onclick="sep(this);setPrice(2000)">
+						<div class="f"> < $ 2000
+							<div class="check hide">
+							</div>
+						</div>
+						<!-- <div class="check">
+						</div> -->
+					</div>
+					
+					<div class="filter-sub" id="#fc" onclick="sep(this);setPrice(3000)">
+						<div class="f"> <$ 3000
+							<div class="check hide">
+							</div>
+						</div>
+					</div>
+					<div class="filter-sub" id="#fc" onclick="sep(this);setPrice(4000)">
+						<div class="f"> < $ 4000
+							<div class="check hide">
+							</div>
+						</div>
+						<!-- <div class="check">
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+		<div class="filter-by" onclick="myScript()">
+			<div class="vertical-center">
+				<div class="f">
+					Select Areas
+				</div>
+				<div class="cross r">
+				</div>
+			</div>
+			<!-- <br> -->
+			
+		</div>
+		<div class="filter-by" onclick="myScript()">
+			<div class="vertical-center">
+				<div class="f">
+					Amenities
+				</div>
+				<div class="cross r">
+				</div>
+			</div>
+			<!-- <br> -->
+			
+		</div>
+		<div class="filter-by" onclick="myScript()">
+			<div class="vertical-center">
+				<div class="f">
+					Sq. Foot
+				</div>
+				<div class="cross r">
+				</div>
+			</div>
+			<!-- <br> -->
+			
+		</div>
+	</div>
+	<div class="right-bar">
+		<div class="search-top vertical-center">
+			<!-- <div class="tp"> -->
+				<div class="search vertical-center">
+					<!-- <div class="search-text"> -->
+						<input type="text" id="sr" placeholder="SEARCH HERE" />
+					<!-- </div> -->
+
+				</div>
+				<div class="button sort vertical-center">
+					<div style="text-align: center;" onclick="change(this)">
+						Sort By:<b> Newest </b>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+		<!-- <div style="height: 60%;background-color: red;"></div> -->
+		<div class="cards--viewer">
+			<div class="card">
+				<!-- <div class="card--image"> -->
+					<img src="./images/res1.png">
+				<!-- </div> -->
+				<div class="card--desc">
+					<div class="card-t vertical-center">
+						<div class="card--text">
+							<b class="res">Residential Apartments</b>
+							<br>	
+							Sector 34, Greator Noida
+						</div>
+						<div class="bookmark">
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="more">MORE -></div>
+			</div>
+			<div class="card">
+				<!-- <div class="card--image"> -->
+					<img src="./images/res1.png">
+				<!-- </div> -->
+				<div class="card--desc">
+					<div class="card-t vertical-center">
+						<div class="card--text">
+							<b class="res">Residential Apartments</b>
+							<br>	
+							Sector 34, Greator Noida
+						</div>
+						<div class="bookmark">
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="more">MORE -></div>
+			</div>
+			<div class="card">
+				<!-- <div class="card--image"> -->
+					<img src="./images/res1.png">
+				<!-- </div> -->
+				<div class="card--desc">
+					<div class="card-t vertical-center">
+						<div class="card--text">
+							<b class="res">Residential Apartments</b>
+							<br>	
+							Sector 34, Greator Noida
+						</div>
+						<div class="bookmark">
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="more">MORE -></div>
+			</div>
+			<div class="card">
+				<!-- <div class="card--image"> -->
+					<img src="./images/res1.png">
+				<!-- </div> -->
+				<div class="card--desc">
+					<div class="card-t vertical-center">
+						<div class="card--text">
+							<b class="res">Residential Apartments</b>
+							<br>	
+							Sector 34, Greator Noida
+						</div>
+						<div class="bookmark">
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="more">MORE -></div>
+			</div>
+
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
