@@ -1,0 +1,19 @@
+{
+  "name": "nlp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "natural": "^2.1.5"
+  },
+  "engines": {
+    "node": "12.x"
+  },  
+  "devDependencies": {},
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "",
+  "license": "ISC"
+}
