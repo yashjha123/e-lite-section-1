@@ -5,7 +5,7 @@ In Problem 1,NLP in used in the search bar, just type "cheap" or "office" or "cr
 The filter-bar and the sort-by works. 
 
 https://infinite-taiga-09765.herokuapp.com/ \
-Heroku is used here, I trouble while hosting node.js on Vercel. \
+Heroku is used here, I was having issues while hosting node.js on Vercel. \
 Not Backended Version \
 https://section-1.vercel.app/Prompt%201/index.html 
 ## Problem 2 
